@@ -1,0 +1,231 @@
+/*  CSS RESET  */
+
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+
+html, body{
+    line-height: 1.5;
+}
+
+img, iframe, svg, video{
+    display: inline-block;
+    max-width: 100%;
+}
+
+button, input, textarea{
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    overflow-wrap: break-word;
+}
+
+/* MAIN CSS STYLING */
+body{
+    color: #40514E;
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    
+}
+
+p{
+    line-height: 2;
+}
+
+
+
+/*FONT SIZING - 100% = 16PX = 1em 0R 1rem*/
+
+/*CSS SELECTORS*/
+
+/*DESCENDANT SELECTOR - two or more selectors, the second selector is a child of the first selector (the ancestor)*/
+body .top-container p{
+    font-size: calc((40 / 16) * 1rem);
+}
+
+/*CHILD SELECTOR - two selectors, the second selector is a direct child of thr first selector (>) */
+
+
+/*Adajacent selector - two selectors, the selctor selector is directly after the first  sector in the html flow (+) */
+
+
+/*GENERAL SELECTORS*/
+
+ h2 ~ p {
+ color: blue;
+}
+
+
+/* HEADINGS AND PARAGRAPHS*/
+
+h1{
+    color: #f37121;
+    font-family: 'Sacramento', cursive;
+    font-size: calc(5rem + 0.6rem); 
+    margin: 50px auto 0 auto;
+    line-height: 2;
+}
+
+
+h2, h3{
+    color:#F4EA8E;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+
+h2{
+    padding-bottom: 10px;
+    font-weight: normal;
+    color: #D92027;
+}
+h3, a{
+    color: #11999E;
+}
+
+
+
+hr{
+    border: dotted #EAF6F6 6px;
+    border-top: none;
+    width:4%;
+    margin:100px auto 100px auto;
+    
+}
+
+
+/* CONTAINER STYLING*/
+
+.top-container{
+    background-color: #C6DCE4;
+    padding-top: 100px;
+    position: relative; /* position absolute needs to be relative to a container or it would be relative to the body*/
+
+}
+.middle-container{
+    background-color: #93C4FF;
+    margin:80px 0;
+}
+.bottom-container{
+     background-color: #C6DCE4;
+     padding:50px 0 20px;
+}
+
+
+.skill-row{
+    width: 40%;
+    margin: 50px auto 50px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.profile-text{
+    color: #40514E;
+    width: 30%;
+    margin: 10px auto 10px auto;
+}
+
+/*IMAGES STYLING*/
+
+.bottom-cloud{
+    position: absolute; /* position absolute to remove element from html flow*/
+    bottom: 315px;
+    left: 300px;
+    
+}
+
+.top-cloud{
+    position: absolute;
+    right: 350px;
+    top: 40px;
+}
+
+.profile-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.backend-skills-img{
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+    width:25%;
+    background-color: #F4EA8E;
+}
+
+.content-creation{
+    border-radius:50%;
+    margin-left: 30px;
+    float: right;
+    width:25%;
+    background-color: #F4EA8E;
+}
+
+.contact-text{
+    width: 40%;
+    margin: 20px auto 50px;
+}
+
+.contact-me h2 h3 + p {
+    margin-bottom: 10px;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Merriweather', serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb,  #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb,  #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb,  #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb,  #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb,  #2bc4ad);
+  text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color:#11999E;
+    font-family: 'Merriweather', serif;
+    padding: 0 10px;
+    /* margin:10px 20px; */
+
+}
+
+.footer-link{
+    /* padding: 50px 20px 50px 20px;
+    margin-top: 50px; */
+    color:#11999E;
+}
+
+.footer-text{
+    color: #eaf6f6;
+}
+
+.foo{
+    padding-top: 40px;
+}
+
+
